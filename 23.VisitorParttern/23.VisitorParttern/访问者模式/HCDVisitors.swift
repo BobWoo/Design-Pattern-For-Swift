@@ -9,11 +9,11 @@
 import UIKit
 
 class HCDVisitors: NSObject {
-    func visitConcreteElementA(concretElmentA : HCDConcreteElementA) {
+    func visitConcreteElementA(_ concretElmentA : HCDConcreteElementA) {
         
     }
     
-    func visitConcreteElementB(concreteElementB : HCDConcreteElementB) {
+    func visitConcreteElementB(_ concreteElementB : HCDConcreteElementB) {
         
     }
 }

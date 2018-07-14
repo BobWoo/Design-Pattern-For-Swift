@@ -9,7 +9,7 @@
 import UIKit
 
 class HCDTerminalExpression: HCDAbstractExpression {
-    override func interpret(contenx: HCDContext) {
+    override func interpret(_ contenx: HCDContext) {
         print("终端解释器，context == \(contenx.outPut)")
     }
 }

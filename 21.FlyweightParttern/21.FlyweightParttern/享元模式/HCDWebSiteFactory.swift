@@ -11,8 +11,8 @@ import UIKit
 class HCDWebSiteFactory: NSObject {
     var flyWeights = NSDictionary()
     
-    func getWebSiteCategory(webKey:NSString) -> HCDWebSite {
-        var webSite = HCDWebSite?()
+    func getWebSiteCategory(_ webKey:NSString) -> HCDWebSite {
+        var webSite: HCDWebSite? = nil
         
         for (mkey,mvalue) in flyWeights {
             if webKey==mkey as! NSObject {
@@ -24,7 +24,7 @@ class HCDWebSiteFactory: NSObject {
             concreteset.webName = webKey
             webSite = concreteset
             let mutabledic = NSMutableDictionary()
-            mutabledic.addEntriesFromDictionary(flyWeights as [NSObject : AnyObject])
+            mutabledic.addEntries(from: flyWeights as [NSObject : AnyObject])
             mutabledic.setObject(webSite!, forKey: webKey)
             flyWeights = NSDictionary.init(dictionary: mutabledic)
         }

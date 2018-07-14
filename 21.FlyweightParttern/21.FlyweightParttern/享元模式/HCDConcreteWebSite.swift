@@ -10,7 +10,7 @@ import UIKit
 
 class HCDConcreteWebSite: NSObject, HCDWebSite {
     var webName = NSString()
-    func use(user: HCDUser) {
+    func use(_ user: HCDUser) {
         print("网站分类:\(webName),用户:\(user.name)")
     }
 }

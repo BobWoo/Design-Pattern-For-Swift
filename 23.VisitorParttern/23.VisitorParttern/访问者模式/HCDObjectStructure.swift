@@ -11,17 +11,17 @@ import UIKit
 class HCDObjectStructure: NSObject {
     var elements = NSMutableArray()
     
-    func attach(element : HCDElements) {
-        elements.addObject(element)
+    func attach(_ element : HCDElements) {
+        elements.add(element)
     }
     
-    func depatch(element:HCDElements) {
-        elements.removeObject(element)
+    func depatch(_ element:HCDElements) {
+        elements.remove(element)
     }
     
-    func accept (visitor : HCDVisitors) {
+    func accept (_ visitor : HCDVisitors) {
         for element in (elements as NSArray as! [HCDElements]) {
-            element.accept(visitor)
+            element.accept(visitor: visitor)
         }
     }
     

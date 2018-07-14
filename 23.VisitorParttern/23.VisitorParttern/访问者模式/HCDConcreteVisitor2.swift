@@ -9,9 +9,9 @@
 import UIKit
 
 class HCDConcreteVisitor2: HCDVisitors {
-    override func visitConcreteElementB(concreteElementB: HCDConcreteElementB) {
-        let eleName = String(HCDConcreteElementB)
-        let visitorName = String(HCDConcreteVisitor2)
+    override func visitConcreteElementB(_ concreteElementB: HCDConcreteElementB) {
+        let eleName = String(describing: HCDConcreteElementB.self)
+        let visitorName = String(describing: HCDConcreteVisitor2.self)
         print("\(eleName)被\(visitorName)访问")
     }
 }

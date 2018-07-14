@@ -9,7 +9,7 @@
 import UIKit
 
 class HCDNonterminalExpression: HCDAbstractExpression {
-    override func interpret(contenx: HCDContext) {
+    override func interpret(_ contenx: HCDContext) {
         print("非中断解释器，context == \(contenx.outPut)")
     }
 }

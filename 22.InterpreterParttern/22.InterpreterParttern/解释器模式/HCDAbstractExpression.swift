@@ -9,7 +9,7 @@
 import UIKit
 
 class HCDAbstractExpression: NSObject {
-    func interpret(contenx : HCDContext) {
+    func interpret(_ contenx : HCDContext) {
         
     }
 }

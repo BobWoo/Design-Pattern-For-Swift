@@ -11,10 +11,11 @@ import UIKit
 class HCDContext: NSObject {
     var input = NSString()
     var outPut : NSString {
-        return NSString.init(format: "输入的是\(input)")
+        return NSString.init(format: "输入的是\(input)" as NSString)
     }
     
-    func initWithInput(input : NSString) -> HCDContext {
+    @discardableResult
+    func initWithInput(_ input : NSString) -> HCDContext {
         self.input = input
         return self
     }

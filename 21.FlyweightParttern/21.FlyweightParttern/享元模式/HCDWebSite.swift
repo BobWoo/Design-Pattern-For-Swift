@@ -8,7 +8,7 @@
 
 import Foundation
 
-@objc protocol HCDWebSite {
-    func use(user:HCDUser)
+protocol HCDWebSite {
+    func use(_ user:HCDUser)
 }
 
