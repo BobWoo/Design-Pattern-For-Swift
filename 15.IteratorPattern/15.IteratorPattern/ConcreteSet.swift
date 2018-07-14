@@ -11,15 +11,15 @@ import UIKit
 class ConcreteSet: NSObject {
    
     var items:NSMutableArray = []
-    func getCount()->NSInteger
+    func getCount() -> Int
     {
         return items.count
     }
-    func getItemFromIndex(index:NSInteger)->AnyObject
+    func getItemFromIndex(_ index: Int) -> AnyObject
     {
-        return items.objectAtIndex(index)
+        return items.object(at: index) as AnyObject
     }
-    func insertItem(item:AnyObject)  {
-        items.addObject(item)
+    func insertItem(_ item:AnyObject)  {
+        items.add(item)
     }
 }

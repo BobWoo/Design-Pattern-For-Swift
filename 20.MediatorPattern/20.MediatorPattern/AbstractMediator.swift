@@ -11,13 +11,13 @@ import UIKit
 class AbstractMediator: NSObject {
     var colleagueA = AbstractColleague()
     var colleagueB = AbstractColleague()
-    func initWithColleagueA(colleagueA:AbstractColleague,colleagueB:AbstractColleague)  {
+    func initWithColleagueA(_ colleagueA:AbstractColleague,colleagueB:AbstractColleague)  {
                 
     }
   
-    func setValueToColleagueA(value:CGFloat) -> Void {
+    func setValueToColleagueA(_ value:CGFloat) -> Void {
     }
-    func setValueToColleagueB(value:CGFloat) -> Void {
+    func setValueToColleagueB(_ value:CGFloat) -> Void {
     }
     
     

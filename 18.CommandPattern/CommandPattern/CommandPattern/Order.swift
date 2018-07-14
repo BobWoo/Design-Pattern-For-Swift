@@ -10,7 +10,7 @@ import Foundation
 class Order: NSObject {
     var orderString: NSString = ""
     
-    func initWithOrderString(orderStringValue: NSString) {
+    func initWithOrderString(_ orderStringValue: NSString) {
         orderString = orderStringValue
     }
     

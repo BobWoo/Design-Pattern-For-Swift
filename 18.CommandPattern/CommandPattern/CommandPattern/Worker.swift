@@ -11,20 +11,16 @@ import Foundation
 class Worker: NSObject {
     class var sharedInstance : Worker {
         struct Static {
-            static var onceToken : dispatch_once_t = 0
-            static var instance : Worker? = nil
+            static var instance = Worker()
         }
-        dispatch_once(&Static.onceToken) {
-            Static.instance = Worker()
-        }
-        return Static.instance!
+        return Static.instance
     }
     
-    func doMuttonWork(work:NSString) {
+    func doMuttonWork(_ work:NSString) {
         print("厨师烤羊串\(work)")
     }
     
-    func doChickenWork(work:NSString) {
+    func doChickenWork(_ work:NSString) {
         print("厨师烤鸡肉\(work)")
     }
     

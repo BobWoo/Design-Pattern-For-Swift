@@ -23,9 +23,9 @@ class ViewController: UIViewController {
         }
         
         let  concreteSet = ConcreteSet()
-        concreteSet.insertItem("apple")
-        concreteSet.insertItem("banana")
-        concreteSet.insertItem("orange")
+        concreteSet.insertItem("apple" as AnyObject)
+        concreteSet.insertItem("banana" as AnyObject)
+        concreteSet.insertItem("orange" as AnyObject)
         
         print("Count is :\(concreteSet.getCount())")
 

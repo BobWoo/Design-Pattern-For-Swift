@@ -11,12 +11,12 @@ import Foundation
 class Waiter: NSObject {
     var orderList: NSMutableArray = NSMutableArray()
     
-    func addOrder(order:Order) {
-        orderList.addObject(order)
+    func addOrder(_ order:Order) {
+        orderList.add(order)
     }
     
-    func deleteOrder(order:Order) {
-        orderList.removeObject(order)
+    func deleteOrder(_ order:Order) {
+        orderList.remove(order)
     }
     
     func notifyOrder() {

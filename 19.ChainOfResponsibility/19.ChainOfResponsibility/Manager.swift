@@ -10,13 +10,13 @@ import Foundation
 
 class Manager: NSObject {
     var name = NSString()
-    var superior = Manager!()
+    var superior = Manager()
     
-    func initWithName(names:NSString) {
+    func initWithName(_ names:NSString) {
         name = names
     }
     
-    func dealRequest(request: Request) -> Void {
+    func dealRequest(_ request: Request) -> Void {
         
     }
 }

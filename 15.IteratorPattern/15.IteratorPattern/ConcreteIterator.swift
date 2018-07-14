@@ -21,6 +21,7 @@ class ConcreteIterator: NSObject {
         return mySet.getItemFromIndex(0)
     }
    
+    @discardableResult
     func nextItem()->AnyObject?
     {
         current += 1

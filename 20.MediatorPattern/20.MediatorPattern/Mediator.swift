@@ -12,17 +12,17 @@ class Mediator: AbstractMediator {
     
     
     
-     override func initWithColleagueA(colleagueA:AbstractColleague,colleagueB:AbstractColleague)  {
+     override func initWithColleagueA(_ colleagueA:AbstractColleague,colleagueB:AbstractColleague)  {
 
         self.colleagueA = colleagueA
         self.colleagueB = colleagueB
         
     }
 
-    override func setValueToColleagueA(value:CGFloat) -> Void {
+    override func setValueToColleagueA(_ value:CGFloat) -> Void {
         self.colleagueA.number = value * 100
     }
-    override func setValueToColleagueB(value:CGFloat) -> Void {
+    override func setValueToColleagueB(_ value:CGFloat) -> Void {
         self.colleagueB.number = value * 0.01
     }
     

@@ -12,7 +12,7 @@ import UIKit
 class AbstractColleague: NSObject {
 
     var number = CGFloat()
-    var  mediator = AbstractMediator!()
+    var  mediator = AbstractMediator()
     
     func notice1()  {
         

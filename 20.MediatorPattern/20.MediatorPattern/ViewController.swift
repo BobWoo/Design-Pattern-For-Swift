@@ -27,10 +27,10 @@ class ViewController: UIViewController {
         colleagueA.number = 1450
         colleagueB.number = 1450
         colleagueA.notice1()
-        print(NSString.lowercaseStringWithLocale("%f-----%f"),colleagueA.number,colleagueB.number)
+        print("%f-----%f".lowercased(), colleagueA.number,colleagueB.number)
         colleagueB.number = 123
         colleagueB.notice1()
-        print(NSString.lowercaseStringWithLocale("%f-----%f"),colleagueA.number,colleagueB.number)
+        print("%f-----%f".lowercased(), colleagueA.number,colleagueB.number)
         
         // Do any additional setup after loading the view, typically from a nib.
     }

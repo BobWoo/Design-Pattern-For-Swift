@@ -9,7 +9,7 @@
 import Foundation
 
 class Customr: NSObject {
-    func pushOrderWithString(string:NSString,type:Bool)->Order{
+    func pushOrderWithString(_ string:NSString, type:Bool)->Order{
         var order:Order = Order()
         if(type){
             order = MuttonOrder()
