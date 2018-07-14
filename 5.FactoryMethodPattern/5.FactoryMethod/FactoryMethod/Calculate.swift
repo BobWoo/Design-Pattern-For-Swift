@@ -11,6 +11,6 @@ import Foundation
 @objc protocol Calculate{
     var numberA: Float { get set }
     var numberB: Float { get set }
-    optional func calculate()->Float
+    @objc optional func calculate()->Float
     
 }
