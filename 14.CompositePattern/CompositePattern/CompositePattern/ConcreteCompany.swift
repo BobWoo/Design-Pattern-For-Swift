@@ -18,25 +18,26 @@ class ConcreteCompany: Company {
         self.name = name
     }
     
-    override func add(company: Company) {
-        self.childList.addObject(company)
+    override func add(_ company: Company) {
+        self.childList.add(company)
     }
     
-    override func remove(company: Company) {
-        self.childList.removeObject(company)
+    override func remove(_ company: Company) {
+        self.childList.remove(company)
     }
     
     override func display() {
         print("\(self.name)的子公司")
         for company in self.childList {
-            company.display()
+            
+            (company as! Company).display()
         }
     }
     
     override func lineofDuty() {
         print("\(self.name)的子公司的职责")
         for company in self.childList {
-            company.lineofDuty()
+            (company as! Company).lineofDuty()
         }
     }
     

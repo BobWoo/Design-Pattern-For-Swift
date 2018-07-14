@@ -12,7 +12,7 @@ class StateManager: NSObject {
 
     var gameState: GameState = GameState()
     
-    func initWithGameState(gameStateValue: GameState) {
+    func initWithGameState(_ gameStateValue: GameState) {
         gameState = gameStateValue
     }
 }

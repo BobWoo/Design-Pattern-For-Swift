@@ -10,11 +10,11 @@ import UIKit
 
 class Company: NSObject {
 
-    func add(company: Company) {
+    func add(_ company: Company) {
         
     }
     
-    func remove(company: Company) {
+    func remove(_ company: Company) {
         
     }
     

@@ -7,8 +7,10 @@
 //
 
 import Foundation
-@objc protocol Department {
+protocol Department {
     
-    optional func insertDepartment(department:SQLDepartment)
-    optional func getDepartment() -> SQLDepartment
+    func insertDepartment(_ department: SQLDepartment)
+    
+    @discardableResult
+    func getDepartment() -> SQLDepartment
 }

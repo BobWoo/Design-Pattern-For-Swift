@@ -8,6 +8,6 @@
 
 import Foundation
 
-@objc protocol State {
-    optional func writeProgram(class work: Work)
+protocol State {
+    func writeProgram(class work: Work)
 }

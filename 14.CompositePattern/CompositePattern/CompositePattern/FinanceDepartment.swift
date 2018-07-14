@@ -15,11 +15,11 @@ class FinanceDepartment: Company {
         self.name = name
     }
     
-    override func add(company: Company) {
+    override func add(_ company: Company) {
         
     }
     
-    override func remove(company: Company) {
+    override func remove(_ company: Company) {
         
     }
     

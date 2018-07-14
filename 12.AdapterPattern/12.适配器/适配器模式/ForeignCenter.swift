@@ -10,7 +10,9 @@ import UIKit
 
 class ForeignCenter: NSObject {
     var mName : String = ""
-    func initWithName(name : String) -> ForeignCenter {
+    
+    @discardableResult
+    func initWithName(_ name : String) -> ForeignCenter {
         self.mName = name
         return self
     }

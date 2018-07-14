@@ -8,10 +8,9 @@
 
 import Foundation
 
-@objc protocol Factory {
+protocol Factory {
+    func createUser() -> User
     
-   optional func createUser() -> User
-    
-   optional  func createDepartment() -> Department
+    func createDepartment() -> Department
     
 }

@@ -7,10 +7,11 @@
 //
 
 import Foundation
-@objc protocol User {
+
+protocol User {
     
-    optional func insertUser(user:SQLUser)
+    func insertUser(user:SQLUser)
     
-    optional func getUser() -> SQLUser
+    func getUser() -> SQLUser
     
 }

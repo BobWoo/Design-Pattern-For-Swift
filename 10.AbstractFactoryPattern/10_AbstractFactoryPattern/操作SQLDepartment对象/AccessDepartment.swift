@@ -13,7 +13,7 @@ class AccessDepartment: NSObject,Department {
         return SQLDepartment()
     }
     
-    func insertDepartment(department: SQLDepartment) {
+    func insertDepartment(_ department: SQLDepartment) {
         
         print("插入一个Access的SQLDepartment对象")
     }

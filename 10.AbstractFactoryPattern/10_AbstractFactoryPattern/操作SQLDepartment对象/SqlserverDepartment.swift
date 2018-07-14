@@ -15,7 +15,7 @@ class SqlserverDepartment: NSObject,Department {
         return SQLDepartment()
     }
     
-    func insertDepartment(department: SQLDepartment) {
+    func insertDepartment(_ department: SQLDepartment) {
         
         print("插入一个Sqlserver的SQLDepartment对象")
     }

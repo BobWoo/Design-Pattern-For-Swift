@@ -12,7 +12,8 @@ class Translator: Player {
     
     var foreigncenter = ForeignCenter()
     
-    override func initWithName(name: String) -> Player {
+    @discardableResult
+    override func initWithName(_ name: String) -> Player {
         self.foreigncenter.initWithName(name)
         return self
     }

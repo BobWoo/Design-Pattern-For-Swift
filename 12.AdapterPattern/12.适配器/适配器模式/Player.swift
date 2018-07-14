@@ -10,7 +10,9 @@ import UIKit
 
 class Player: NSObject {
     var mName : String = ""
-    func initWithName(name : String) -> Player {
+    
+    @discardableResult
+    func initWithName(_ name : String) -> Player {
         self.mName = name
         return self
     }

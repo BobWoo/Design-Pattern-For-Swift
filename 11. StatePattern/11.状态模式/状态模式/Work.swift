@@ -18,7 +18,7 @@ class Work: NSObject {
     }
     
     func writeProgram() {
-        state?.writeProgram!(class: self)
+        state?.writeProgram(class: self)
     }
 }
 

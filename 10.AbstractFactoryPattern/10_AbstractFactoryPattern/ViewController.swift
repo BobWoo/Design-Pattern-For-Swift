@@ -16,15 +16,15 @@ class ViewController: UIViewController {
         let factory = SqlserverFactory()
         let department = factory.createDepartment()
         let sqlDepartment = SQLDepartment()
-        department.insertDepartment!(sqlDepartment)
-        department.getDepartment!()
+        department.insertDepartment(sqlDepartment)
+        department.getDepartment()
         
         
         let factory1 = AccessFactory()
         let department1 = factory1.createDepartment()
         let sqlDepartment1 = SQLDepartment()
-        department1.insertDepartment!(sqlDepartment1)
-        department1.getDepartment!()
+        department1.insertDepartment(sqlDepartment1)
+        department1.getDepartment()
         
         
         // Do any additional setup after loading the view, typically from a nib.

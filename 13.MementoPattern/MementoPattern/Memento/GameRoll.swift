@@ -31,7 +31,7 @@ class GameRoll: NSObject {
     }
     
     // 恢复到某个状态
-    func rebackState(state: GameState) {
+    func rebackState(_ state: GameState) {
         self.life = state.life
         self.defeat = state.defeat
         self.attack = state.attack
