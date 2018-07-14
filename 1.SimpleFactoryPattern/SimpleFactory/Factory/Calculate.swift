@@ -13,6 +13,7 @@ class Calculate: NSObject {
     var firstNumber : Float = 0
     var secondNumber : Float = 0
     
+    @discardableResult
     func calculate() -> Float {
         return 0;
     }

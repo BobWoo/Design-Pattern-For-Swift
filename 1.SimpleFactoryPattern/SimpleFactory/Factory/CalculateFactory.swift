@@ -18,9 +18,9 @@ enum CalculateType: Int {
 
 class CalculateFactory: NSObject {
     
-    class func createCalculate(calculateString : String) -> Calculate {
+    class func createCalculate(_ calculateString : String) -> Calculate {
         let calculateArray : NSArray = ["+", "-", "*", "/"]
-        let calculateType : CalculateType = CalculateType(rawValue : calculateArray.indexOfObject(calculateString))!
+        let calculateType : CalculateType = CalculateType(rawValue : calculateArray.index(of:calculateString))!
         return createCalculateWithType(calculateType)
     }
 
@@ -29,7 +29,7 @@ class CalculateFactory: NSObject {
      - parameter calcuteType: 运算类型
      - returns: 运算实例
      */
-    class func createCalculateWithType(calculateType : CalculateType) -> Calculate {
+    class func createCalculateWithType(_ calculateType : CalculateType) -> Calculate {
         switch calculateType {
         case .calculateTypeAdd:
             return CalculateAdd()

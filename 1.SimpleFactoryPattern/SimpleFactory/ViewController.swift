@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         calculate.firstNumber = Float(firstNumber.text!)!
         calculate.secondNumber = Float(secondNumber.text!)!
         
-        var result : Float = calculate.calculate()
+        let result : Float = calculate.calculate()
         
         print(result)
         
