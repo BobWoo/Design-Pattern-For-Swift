@@ -11,7 +11,7 @@ import UIKit
 
 class CashRobate: CashBase {
    
-    override func acceptCash(cash: Float) -> Float {
+    override func acceptCash(_ cash: Float) -> Float {
         return 0.8 * cash
     }
 }

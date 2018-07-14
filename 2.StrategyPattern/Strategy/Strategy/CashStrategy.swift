@@ -29,7 +29,7 @@ class CashStrategy: NSObject {
         }
     }
 
-    func getResult(money : Float) -> Float {
+    func getResult(_ money : Float) -> Float {
         return self.cashSuper.acceptCash(money)
     }
 }

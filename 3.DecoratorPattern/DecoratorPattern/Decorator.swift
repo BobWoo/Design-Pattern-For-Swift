@@ -11,15 +11,15 @@ import UIKit
 class Decorator:NormalCellPhone {
 
     var abstractCellPhone:NormalCellPhone?
-    func setComponents(component:NormalCellPhone)
+    func setComponents(_ component:NormalCellPhone)
     {
         self.abstractCellPhone=component;
     }
 
-    override func callNumber() -> NSString {
+    override func callNumber() -> String {
         return self.abstractCellPhone!.callNumber()
     }
-    override func sendMessage() -> NSString {
+    override func sendMessage() -> String {
         return self.abstractCellPhone!.sendMessage()
     }
 }

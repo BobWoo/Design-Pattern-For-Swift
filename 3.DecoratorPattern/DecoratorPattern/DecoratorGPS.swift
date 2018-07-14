@@ -10,10 +10,10 @@ import UIKit
 
 class DecoratorGPS: Decorator {
 
-    override func callNumber() -> NSString {
+    override func callNumber() -> String {
         return "\(super.callNumber()) with GPS"
     }
-    override func sendMessage() -> NSString {
+    override func sendMessage() -> String {
         return "\(super.sendMessage()) with GPS"
     }
 }

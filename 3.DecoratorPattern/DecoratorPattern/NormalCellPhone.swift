@@ -9,10 +9,10 @@
 import UIKit
 
 class NormalCellPhone: NSObject {
-    func callNumber() -> NSString {
+    func callNumber() -> String {
         return "phone call someBody"
     }
-    func sendMessage() -> NSString {
+    func sendMessage() -> String {
         return "phone send a message to somebody"
     }
 }

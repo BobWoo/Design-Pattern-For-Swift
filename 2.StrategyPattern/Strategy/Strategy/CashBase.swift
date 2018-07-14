@@ -10,7 +10,7 @@ import UIKit
 
 class CashBase: NSObject {
 
-    func acceptCash(cash : Float) -> Float {
+    func acceptCash(_ cash : Float) -> Float {
         return 0
     }
 }

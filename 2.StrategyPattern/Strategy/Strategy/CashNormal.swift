@@ -11,7 +11,7 @@ import UIKit
 
 class CashNormal: CashBase {
 
-    override func acceptCash(cash: Float) -> Float {
+    override func acceptCash(_ cash: Float) -> Float {
         return cash
     }
     

@@ -10,10 +10,10 @@
 import UIKit
 
 class DecoratorBluetooth: Decorator {
-    override func callNumber() -> NSString {
+    override func callNumber() -> String {
         return "\(super.callNumber()) with bluetooth"
     }
-    override func sendMessage() -> NSString {
+    override func sendMessage() -> String {
         return "\(super.sendMessage()) with bluetooth"
     }
 }

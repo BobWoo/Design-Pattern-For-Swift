@@ -10,10 +10,10 @@ import UIKit
 
 class NokiaPhone: NormalCellPhone {
 
-    override func callNumber() -> NSString {
+    override func callNumber() -> String {
         return "Nokiaphone call someBody"
     }
-    override func sendMessage() -> NSString {
+    override func sendMessage() -> String {
 
         return "NokiaPhone send a message to somebody"
     }
